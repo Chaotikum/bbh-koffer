@@ -19,6 +19,6 @@ Build
 
 To update the UUIDs convert the CSV to Elm code:
 
-	tail +2 data/koffer.csv | awk -F ';' '{ print "{ uuid = \"" $1 "\", name = \"" $2 "\", text = \"" $5 "\" }," }' >> app/Main.elm
+	tail +2 data/koffer.csv | awk -F ';' '{ print ", { uuid = \"" $1 "\", name = \"" $2 "\", text = \"" $5 "\" }" }' >> app/Main.elm
 
 ...and replace the `db : List Thing` content. I know, we really need the Makefile.
