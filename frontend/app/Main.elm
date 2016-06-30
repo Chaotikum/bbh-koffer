@@ -58,26 +58,26 @@ init stats =
 
 db : List Thing
 db =
-  [ { uuid = "d0d3fa86ca7645ec9bd96af4ab074a13dee28fa2", name = "Smartphone", text = "Früher brauchten die Menschen Karten, Kompass, Taschenlampen, etc.,<br>um sich zurecht zu finden, ein Radio, um sich informieren zu können,<br>Fotos und Kamera, um sich zu erinnern und Momente festzuhalten.<br>Heutzutage vereint das Handy all diese Funktionen in einem Gerät." }
-  , { uuid = "d0d3fa86ca7645ec9bd96af4bce68b06afdac14d", name = "Geld", text = "Geld, Geld, Geld. Geld regiert die Welt.<br>Doch damals, als die Manns geflohen sind, gab es viele verschiedene Währungen, die es schwierig machten, mit Geld zu bezahlen und den Wert zu vergleichen" }
-  , { uuid = "d0d3fa86ca7645ec9bd96af44c435b5e89ebccb3", name = "Essen", text = "Was würdest du eher mitnehmen: deine Lieblingssüßigkeit oder etwas Nahrhaftes?" }
-  , { uuid = "d0d3fa86ca7645ec9bd96af4960edabbf5e494b8", name = "Kleidung", text = "Manch einer nimmt die Multifunktionsjacke und die Wanderschuhe mit,<br>andere retten ihre feine Garderobe<br>So auch Thomas Mann: Er nahm seine Pelze mit." }
-  , { uuid = "d0d3fa86ca7645ec9bd96af4509d21d91f7094f5", name = "Erinnerungen", text = "Ganz spontan:<br>Welches ist dein liebstes Erinnerungsstück?<br>Würdest du dafür etwas Wichtiges zurücklassen?" }
-  , { uuid = "d0d3fa86ca7645ec9bd96af45769d4c469ba653a", name = "Hygieneartikel", text = "Heutzutage verbieten die Schlepper den Flüchtlingen,<br>für uns selbstverständliches Gepäck auf die Boote mitzunehmen,<br>da es den Platz für eine weitere Person einnehmen würde." }
-  , { uuid = "d0d3fa86ca7645ec9bd96af4d62d3ca7158a442d", name = "Taschenmesser", text = "Ein wahres Allzweckgerät:<br>Man kann es als Messer, Säge, Korkenzieher, Flaschen-/Dosenöffner, Zahnstocher, Löffel, Gabel, Nagelfeile und Schere benutzen." }
-  , { uuid = "d0d3fa86ca7645ec9bd96af4603572638582630c", name = "Schlafsack", text = "Zelt, Schlafsack, Decken, Kissen - „ein provisorisches Haus“" }
-  , { uuid = "d0d3fa86ca7645ec9bd96af498b71962fe2e3db2", name = "Streichhölzer", text = "Feuer wärmt in kalten Nächten, die man unter freiem Himmel verbringen muss." }
-  , { uuid = "d0d3fa86ca7645ec9bd96af48ac10846ff929569", name = "Reisepass", text = "1936 wird auch den letzten Mitgliedern der Familie Mann die deutsche Staatsbürgerschaft aberkannt." }
-  , { uuid = "d0d3fa86ca7645ec9bd96af4d927ca5fe7f3eb3f", name = "Kuscheltier", text = "Was ist für dich Geborgenheit?" }
-  , { uuid = "d0d3fa86ca7645ec9bd96af4f8998ec2a73ab148", name = "Waffe", text = "In der Fremde ist alles ungewohnt und angsteinflößend.<br>Bietet eine Waffe wirklich Sicherheit?" }
-  , { uuid = "d0d3fa86ca7645ec9bd96af42e7a03b23a6f759b", name = "Medizin", text = "Welche Medikamente brauchst du?<br>Was würde passieren, wenn du sie nicht nehmen würdest?" }
-  , { uuid = "d0d3fa86ca7645ec9bd96af4373321577515cb0a", name = "Bücher", text = "Ein Buch, zwei Bücher, drei Bücher...<br>Thomas Mann nahm viele seiner Bücher mit.<br>Egal wohin er ging, er ließ sich seinen Bücherschrank und seinen Schreibtisch immer hinterher schicken." }
-  , { uuid = "d0d3fa86ca7645ec9bd96af4a08f70900d461cc9", name = "Spiele", text = "Ist dir Gesellschaft beim Spielen wichtig?" }
-  , { uuid = "d0d3fa86ca7645ec9bd96af4c954ddc024288aca", name = "Notfallset", text = "Nicht alle Wege sind eben.<br>Leicht hätte sich auch Heinrich Mann verletzen können,<br>als er über die Pyrenäen fliehen musste." }
-  , { uuid = "d0d3fa86ca7645ec9bd96af443f18f2fb25c2566", name = "Musik", text = "Musik?<br>Nee, für Erika war das Theater das Wichtigste in ihrem Leben.<br>Auch ein Teil ihrer Theatergruppe „Die Pfeffermühle“ folgte ihr ins Exil." }
-  , { uuid = "d0d3fa86ca7645ec9bd96af4acc3117cd2264bf3", name = "Karte", text = "Mit Hilfe einer Karte würde man sich in einem fremden Land besser zurechtfinden.<br>Aber kann sie einem auch den Weg weisen, wenn man nicht so genau weiß,<br>wo das endgültige Ziel ist?" }
-  , { uuid = "d0d3fa86ca7645ec9bd96af421cd478197c9638b", name = "Taschenlampe", text = "Licht erhellt die dunklen Ecken und kann die Angst vertreiben." }
-  , { uuid = "d0d3fa86ca7645ec9bd96af4ed896fad3d785489", name = "Seil", text = "Ein Seil kann recht praktisch sein:<br>Um sich aneinander zu binden und sich nicht zu verlieren und<br>um Kleidung darüber zu hängen, damit sie trocknet.<br>Aber braucht man es wirklich, um die Flucht zu überleben?" }
+  [ { uuid = "ab074a13dee28fa2", name = "Smartphone", text = "Früher brauchten die Menschen Karten, Kompass, Taschenlampen, etc.,<br>um sich zurecht zu finden, ein Radio, um sich informieren zu können,<br>Fotos und Kamera, um sich zu erinnern und Momente festzuhalten.<br>Heutzutage vereint das Handy all diese Funktionen in einem Gerät." }
+  , { uuid = "bce68b06afdac14d", name = "Geld", text = "Geld, Geld, Geld. Geld regiert die Welt.<br>Doch damals, als die Manns geflohen sind, gab es viele verschiedene Währungen, die es schwierig machten, mit Geld zu bezahlen und den Wert zu vergleichen" }
+  , { uuid = "4c435b5e89ebccb3", name = "Essen", text = "Was würdest du eher mitnehmen: deine Lieblingssüßigkeit oder etwas Nahrhaftes?" }
+  , { uuid = "960edabbf5e494b8", name = "Kleidung", text = "Manch einer nimmt die Multifunktionsjacke und die Wanderschuhe mit,<br>andere retten ihre feine Garderobe<br>So auch Thomas Mann: Er nahm seine Pelze mit." }
+  , { uuid = "509d21d91f7094f5", name = "Erinnerungen", text = "Ganz spontan:<br>Welches ist dein liebstes Erinnerungsstück?<br>Würdest du dafür etwas Wichtiges zurücklassen?" }
+  , { uuid = "5769d4c469ba653a", name = "Hygieneartikel", text = "Heutzutage verbieten die Schlepper den Flüchtlingen,<br>für uns selbstverständliches Gepäck auf die Boote mitzunehmen,<br>da es den Platz für eine weitere Person einnehmen würde." }
+  , { uuid = "d62d3ca7158a442d", name = "Taschenmesser", text = "Ein wahres Allzweckgerät:<br>Man kann es als Messer, Säge, Korkenzieher, Flaschen-/Dosenöffner, Zahnstocher, Löffel, Gabel, Nagelfeile und Schere benutzen." }
+  , { uuid = "603572638582630c", name = "Schlafsack", text = "Zelt, Schlafsack, Decken, Kissen - „ein provisorisches Haus“" }
+  , { uuid = "98b71962fe2e3db2", name = "Streichhölzer", text = "Feuer wärmt in kalten Nächten, die man unter freiem Himmel verbringen muss." }
+  , { uuid = "8ac10846ff929569", name = "Reisepass", text = "1936 wird auch den letzten Mitgliedern der Familie Mann die deutsche Staatsbürgerschaft aberkannt." }
+  , { uuid = "d927ca5fe7f3eb3f", name = "Kuscheltier", text = "Was ist für dich Geborgenheit?" }
+  , { uuid = "f8998ec2a73ab148", name = "Waffe", text = "In der Fremde ist alles ungewohnt und angsteinflößend.<br>Bietet eine Waffe wirklich Sicherheit?" }
+  , { uuid = "2e7a03b23a6f759b", name = "Medizin", text = "Welche Medikamente brauchst du?<br>Was würde passieren, wenn du sie nicht nehmen würdest?" }
+  , { uuid = "373321577515cb0a", name = "Bücher", text = "Ein Buch, zwei Bücher, drei Bücher...<br>Thomas Mann nahm viele seiner Bücher mit.<br>Egal wohin er ging, er ließ sich seinen Bücherschrank und seinen Schreibtisch immer hinterher schicken." }
+  , { uuid = "a08f70900d461cc9", name = "Spiele", text = "Ist dir Gesellschaft beim Spielen wichtig?" }
+  , { uuid = "c954ddc024288aca", name = "Notfallset", text = "Nicht alle Wege sind eben.<br>Leicht hätte sich auch Heinrich Mann verletzen können,<br>als er über die Pyrenäen fliehen musste." }
+  , { uuid = "43f18f2fb25c2566", name = "Musik", text = "Musik?<br>Nee, für Erika war das Theater das Wichtigste in ihrem Leben.<br>Auch ein Teil ihrer Theatergruppe „Die Pfeffermühle“ folgte ihr ins Exil." }
+  , { uuid = "acc3117cd2264bf3", name = "Karte", text = "Mit Hilfe einer Karte würde man sich in einem fremden Land besser zurechtfinden.<br>Aber kann sie einem auch den Weg weisen, wenn man nicht so genau weiß,<br>wo das endgültige Ziel ist?" }
+  , { uuid = "21cd478197c9638b", name = "Taschenlampe", text = "Licht erhellt die dunklen Ecken und kann die Angst vertreiben." }
+  , { uuid = "ed896fad3d785489", name = "Seil", text = "Ein Seil kann recht praktisch sein:<br>Um sich aneinander zu binden und sich nicht zu verlieren und<br>um Kleidung darüber zu hängen, damit sie trocknet.<br>Aber braucht man es wirklich, um die Flucht zu überleben?" }
   ]
 
 getThing : String -> Maybe Thing
