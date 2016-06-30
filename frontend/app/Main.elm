@@ -19,9 +19,12 @@ type alias Model =
   , stats : Stats
   }
 
+type alias ThingStat =
+  ( String, Int )
+
 type alias Stats =
   { total : Int
-  , things : List ( String, Int )
+  , things : List ThingStat
   }
 
 type alias Thing =
@@ -443,27 +446,24 @@ port saveStats : Stats -> Cmd msg
 
 {---- Helpers ----}
 
+nextThingStat : String -> List ThingStat -> List ThingStat
+nextThingStat uuid stats =
+  case stats of
+    [] ->
+      [(uuid, 1)]
+    head :: tail ->
+      if fst head == uuid then
+        ( uuid, (snd head) + 1 ) :: tail
+      else
+        head :: (nextThingStat uuid tail)
+
 nextStats : Stats -> List String -> Stats
 nextStats stats uuids =
   { stats
   | total = stats.total + 1
   , things =
     List.foldr
-      (\uuid things ->
-        let
-          existing =
-            List.head <| List.filter (\t -> (fst t) == uuid) things
-
-          entry =
-            case existing of
-              Nothing ->
-                ( uuid, 1 )
-
-              Just e ->
-                ( uuid, (snd e) + 1 )
-        in
-          entry :: things
-      )
+      nextThingStat
       stats.things
       uuids
   }
