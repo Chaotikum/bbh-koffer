@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="css/bulma.min.css" type="text/css">
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<title>Koffer packen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/bulma.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Koffer packen</title>
 </head>
 
 <body>
-	<div id="app"></div>
+    <div id="app"></div>
 </body>
 
 <script src="out.js"></script>
 <script>
-	function getStats() {
-		return {
-			total: JSON.parse(localStorage.getItem('total')) || 0,
-			things: JSON.parse(localStorage.getItem('things')) || [],
-		};
-	}
+    function getStats() {
+        return {
+            total: JSON.parse(localStorage.getItem('total')) || 0,
+            things: JSON.parse(localStorage.getItem('things')) || [],
+        };
+    }
 
-	var app = Elm.Main.init({
-		node: document.querySelector('#app'),
-		flags: getStats()
-	});
+    var app = Elm.Main.init({
+        node: document.querySelector('#app'),
+        flags: getStats()
+    });
 
-	app.ports.saveStats.subscribe(function(stats) {
-		stats = Object.assign(getStats(), stats);
-		localStorage.setItem('total', JSON.stringify(stats.total));
-		localStorage.setItem('things', JSON.stringify(stats.things));
-	});
+    app.ports.saveStats.subscribe(function(stats) {
+        stats = Object.assign(getStats(), stats);
+        localStorage.setItem('total', JSON.stringify(stats.total));
+        localStorage.setItem('things', JSON.stringify(stats.things));
+    });
 
-	var sse = new EventSource(
-		'http://127.0.0.1:8080/',
-		//'http://172.23.208.153:8080/',
-		{
-			withCredentials: false,
-		}
-	);
-	sse.addEventListener('statechange', function(event) {
-		var data = JSON.parse(event.data);
-		if (!data || !data.type || !data.state || (data.type != 'lid' && !data.uuid)) {
-			console.log('data incomplete: ' + event.data);
-			return;
-		}
-		data.typ = data.type;
-		app.ports.thingHappens.send(data);
-	});
+    var sse = new EventSource(
+        'http://127.0.0.1:8080/',
+        //'http://172.23.208.153:8080/',
+        {
+            withCredentials: false,
+        }
+    );
+    sse.addEventListener('statechange', function(event) {
+        var data = JSON.parse(event.data);
+        if (!data || !data.type || !data.state || (data.type != 'lid' && !data.uuid)) {
+            console.log('data incomplete: ' + event.data);
+            return;
+        }
+        data.typ = data.type;
+        app.ports.thingHappens.send(data);
+    });
 </script>
 </html>
