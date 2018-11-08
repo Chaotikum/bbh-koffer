@@ -9,6 +9,7 @@
 </head>
 
 <body>
+	<div id="app"></div>
 </body>
 
 <script src="out.js"></script>
@@ -20,7 +21,10 @@
 		};
 	}
 
-	var app = Elm.Main.fullscreen(getStats());
+	var app = Elm.Main.init({
+		node: document.querySelector('#app'),
+		flags: getStats()
+	});
 
 	app.ports.saveStats.subscribe(function(stats) {
 		stats = Object.assign(getStats(), stats);

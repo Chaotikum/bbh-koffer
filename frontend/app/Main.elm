@@ -237,7 +237,7 @@ update msg model =
 
 view : Model -> Html Msg
 view model =
-    div []
+    div [ id "app" ]
         [ div [ class "icons" ] []
         , case model.page of
             "start" ->
@@ -531,9 +531,12 @@ nextStats stats uuids =
 
 padInt : Int -> String
 padInt int =
-    if int < 10 then
-        "0"
+    let
+        prefix =
+            if int < 10 then
+                "0"
 
-    else
-        ""
-            ++ String.fromInt int
+            else
+                ""
+    in
+        prefix ++ String.fromInt int

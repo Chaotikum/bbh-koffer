@@ -18,11 +18,21 @@
 
 @font-face {
 	font-family: 'stanley';
- 	src: url('../fonts/stanley.woff2') format('woff2');
+	src: url('../fonts/stanley.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 }
 
+#app {
+	width: 1280px;
+	height: 800px;
+	margin: auto;
+	position: relative;
+}
+
+#app .hero.is-fullheight {
+	min-height: 800px;
+}
 
 .title,
 .subtitle {
